@@ -19,7 +19,7 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="JdV-AF-rDz">
                                 <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="13" y="174" width="295" height="31"/>
+                                    <rect key="frame" x="13" y="180" width="295" height="31"/>
                                 </variation>
                                 <connections>
                                     <action selector="updateCurrentPass:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Nfz-QM-eLr"/>
@@ -31,13 +31,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="29" y="151" width="99.5" height="20.5"/>
+                                    <rect key="frame" x="29" y="157" width="99.5" height="20.5"/>
                                 </variation>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="fV0-hx-GqZ">
                                 <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="13" y="232" width="295" height="31"/>
+                                    <rect key="frame" x="13" y="238" width="295" height="31"/>
                                 </variation>
                                 <connections>
                                     <action selector="updateRate:" destination="vXZ-lx-hvc" eventType="valueChanged" id="8dO-9l-GZK"/>
@@ -85,7 +85,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="29" y="213" width="99.5" height="20.5"/>
+                                    <rect key="frame" x="29" y="219" width="99.5" height="20.5"/>
                                 </variation>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="o9q-X6-AYS">
@@ -106,28 +106,19 @@
                                     <rect key="frame" x="29" y="494" width="125.5" height="20.5"/>
                                 </variation>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CZU-Ba-qAJ">
-                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="236" y="292" width="51" height="31"/>
-                                </variation>
-                                <connections>
-                                    <action selector="updateSwitch:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Dqo-cm-2ex"/>
-                                </connections>
-                            </switch>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight of A is Increasing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SuH-x1-1a1">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight of     is Increasing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SuH-x1-1a1">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="29" y="294" width="189.5" height="20.5"/>
+                                    <rect key="frame" x="29" y="294" width="196.5" height="20.5"/>
                                 </variation>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="sJS-St-EDc">
                                 <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="13" y="107" width="295" height="31"/>
+                                    <rect key="frame" x="13" y="113" width="295" height="31"/>
                                 </variation>
                                 <connections>
                                     <action selector="updateNumPass:" destination="vXZ-lx-hvc" eventType="valueChanged" id="456-Fy-tWx"/>
@@ -135,8 +126,9 @@
                             </slider>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0z-if-8d5">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <color key="tintColor" red="0.3158817666" green="0.67535374960000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Results">
+                                    <fragment content="Packout Time">
                                         <attributes>
                                             <color key="NSColor" red="0.066700047734656737" green="0.36658463850716566" blue="0.94240404211956519" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="24" name="HelveticaNeue"/>
@@ -156,7 +148,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="29" y="78" width="141.5" height="20.5"/>
+                                    <rect key="frame" x="29" y="84" width="141.5" height="20.5"/>
                                 </variation>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0A-Tb-CDc">
@@ -173,7 +165,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="183" y="75" width="21" height="27"/>
+                                    <rect key="frame" x="183" y="81" width="21" height="27"/>
                                 </variation>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axk-2E-ypV">
@@ -190,7 +182,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="136" y="148" width="21" height="27"/>
+                                    <rect key="frame" x="136" y="154" width="21" height="27"/>
                                 </variation>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8I-c3-kPL">
@@ -207,7 +199,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="74" y="210" width="102" height="27"/>
+                                    <rect key="frame" x="74" y="216" width="102" height="27"/>
                                 </variation>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXr-JB-BEo">
@@ -261,6 +253,25 @@
                                     <rect key="frame" x="160" y="491" width="115" height="27"/>
                                 </variation>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5WJ-uM-xtd">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.066700047730000003" green="0.3665846385" blue="0.94240404209999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="106" y="294" width="11.5" height="20.5"/>
+                                </variation>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CZU-Ba-qAJ">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <color key="onTintColor" red="0.31588176664966028" green="0.67535374955777105" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="239" y="289" width="51" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="updateSwitch:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Dqo-cm-2ex"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="0.6763501485424982" green="0.92431970569973443" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -276,7 +287,6 @@
                                 <exclude reference="YSs-Me-cY2"/>
                                 <exclude reference="o9q-X6-AYS"/>
                                 <exclude reference="Htc-3F-9xe"/>
-                                <exclude reference="CZU-Ba-qAJ"/>
                                 <exclude reference="SuH-x1-1a1"/>
                                 <exclude reference="sJS-St-EDc"/>
                                 <exclude reference="Y0z-if-8d5"/>
@@ -287,6 +297,8 @@
                                 <exclude reference="CXr-JB-BEo"/>
                                 <exclude reference="2H0-DS-8ji"/>
                                 <exclude reference="DBu-Ym-wK4"/>
+                                <exclude reference="5WJ-uM-xtd"/>
+                                <exclude reference="CZU-Ba-qAJ"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -301,7 +313,6 @@
                                 <include reference="YSs-Me-cY2"/>
                                 <include reference="o9q-X6-AYS"/>
                                 <include reference="Htc-3F-9xe"/>
-                                <include reference="CZU-Ba-qAJ"/>
                                 <include reference="SuH-x1-1a1"/>
                                 <include reference="sJS-St-EDc"/>
                                 <include reference="Y0z-if-8d5"/>
@@ -312,6 +323,8 @@
                                 <include reference="CXr-JB-BEo"/>
                                 <include reference="2H0-DS-8ji"/>
                                 <include reference="DBu-Ym-wK4"/>
+                                <include reference="5WJ-uM-xtd"/>
+                                <include reference="CZU-Ba-qAJ"/>
                             </mask>
                         </variation>
                     </view>
@@ -319,6 +332,7 @@
                         <outlet property="currentPassLabel" destination="5j1-th-sqZ" id="V45-He-5qs"/>
                         <outlet property="currentPassResults" destination="axk-2E-ypV" id="fDa-8i-QDM"/>
                         <outlet property="currentPassSlider" destination="JdV-AF-rDz" id="hNX-Ww-G8d"/>
+                        <outlet property="increasingL" destination="5WJ-uM-xtd" id="RFh-Yd-K2e"/>
                         <outlet property="increasingLabel" destination="SuH-x1-1a1" id="L3V-4y-VTQ"/>
                         <outlet property="increasingSwitch" destination="CZU-Ba-qAJ" id="w7d-jm-T8h"/>
                         <outlet property="numPassLabel" destination="3bs-Kf-Glt" id="hEd-Nv-1AO"/>

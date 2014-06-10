@@ -36,6 +36,7 @@ class ViewController: UIViewController {
     }
     
     // Weight of increasing
+    @IBOutlet var increasingL : UILabel
     @IBOutlet var increasingLabel : UILabel
     @IBOutlet var increasingSwitch : UISwitch
     @IBAction func updateSwitch(sender : AnyObject) {switchChangedValue()}
@@ -111,10 +112,10 @@ class ViewController: UIViewController {
     
     func switchChangedValue() {
         if (increasingSwitch.on){
-            increasingLabel.text = "Blender A is increasing"
+            increasingL.text = "A"
         }
         else{
-           increasingLabel.text = "Blender B is increasing"
+           increasingL.text = "B"
         }
     }
 
