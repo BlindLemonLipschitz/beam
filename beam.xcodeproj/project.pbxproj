@@ -397,6 +397,7 @@
 				09D39492194619E600B22FDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09D39493194619E600B22FDC /* Build configuration list for PBXNativeTarget "beamTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +406,7 @@
 				09D39495194619E600B22FDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
