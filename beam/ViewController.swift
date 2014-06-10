@@ -35,19 +35,13 @@ class ViewController: UIViewController {
     // Weight of increasing
     @IBOutlet var increasingLabel : UILabel
     @IBOutlet var increasingSwitch : UISwitch
-    @IBAction func updateSwitch(sender : AnyObject) {
-        switchChangedValue()
-    }
-    
-    
-    
+    @IBAction func updateSwitch(sender : AnyObject) {switchChangedValue()}
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         configurenumPassSlider()
     }
-    
     
     func configurenumPassSlider() {
         numPassSlider.minimumValue = 1
@@ -60,7 +54,7 @@ class ViewController: UIViewController {
         currentPassSlider.value        = 1
         currentPassSlider.continuous   = true
         //rate
-        rateSlider.minimumValue = 500
+        rateSlider.minimumValue = 0
         rateSlider.maximumValue = 6000
         rateSlider.value        = 1000
         rateSlider.continuous   = true
