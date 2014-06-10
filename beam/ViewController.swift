@@ -106,17 +106,33 @@ class ViewController: UIViewController {
     }
     //Actions
     func sliderChangedValue(slider: UISlider, label: UILabel, step: Int) {
-        results.text = "\(Int(slider.value) * step)"
+        //results.text = "\(Int(slider.value) * step)"
         label.text   = "\(Int(slider.value) * step)"
+        results.text = "Hours to Packout: \(calculatePackoutTime())"
     }
     
     func switchChangedValue() {
         if (increasingSwitch.on){
             increasingL.text = "A"
+            results.text = "Hours to Packout: \(calculatePackoutTime())"
         }
         else{
-           increasingL.text = "B"
+            increasingL.text = "B"
+            results.text = "Hours to Packout: \(calculatePackoutTime())"
         }
+    }
+    //Calculate Packout Time
+    func calculatePackoutTime() -> Int{
+        var passesAdjusted = numPassResults.text.toInt()! - 1
+        var passesLeft = Int(numPassResults.text.toInt()!) - 1 - Int(currentPassResults.text.toInt()!)
+        var weightAdded = Int(weightOfAResults.text.toInt()!) + Int(weightOfBResults.text.toInt()!)
+        var weightLeftInCurrentPass = Int(weightOfAResults.text.toInt()!)
+        if (increasingSwitch.on){
+            weightLeftInCurrentPass = Int(weightOfBResults.text.toInt()!)
+        }
+        var weightCalculated = (weightAdded * passesLeft) + weightLeftInCurrentPass
+        var hoursToPackout = weightCalculated / Int(rateResults.text.toInt()!)
+        return (Int(hoursToPackout))
     }
 
 }
