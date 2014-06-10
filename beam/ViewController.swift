@@ -15,27 +15,56 @@ class ViewController: UIViewController {
     // Number of Passes connections from Storyboard
     @IBOutlet var numPassLabel : UILabel
     @IBOutlet var numPassSlider : UISlider
-    @IBAction func updateNumPass(sender : AnyObject) {sliderChangedValue(numPassSlider)
+    @IBOutlet var numPassResults : UILabel
+    @IBAction func updateNumPass(sender : AnyObject) {sliderChangedValue(numPassSlider,label: numPassResults,step: 1)
     }
     
     // Current Pass connections from Storyboard
     @IBOutlet var currentPassLabel : UILabel
     @IBOutlet var currentPassSlider : UISlider
-    @IBAction func updateCurrentPass(sender : AnyObject) {sliderChangedValue(currentPassSlider)
+    @IBOutlet var currentPassResults : UILabel
+    @IBAction func updateCurrentPass(sender : AnyObject) {sliderChangedValue(currentPassSlider,label: currentPassResults,step: 1)
     }
     
     // rate connections from storyboard
     
     @IBOutlet var rateLabel : UILabel
     @IBOutlet var rateSlider : UISlider
+    @IBOutlet var rateResults : UILabel
     @IBAction func updateRate(sender : AnyObject) {
-        sliderChangedValue(rateSlider)
+        sliderChangedValue(rateSlider,label:rateResults,step:250)
     }
     
     // Weight of increasing
     @IBOutlet var increasingLabel : UILabel
     @IBOutlet var increasingSwitch : UISwitch
     @IBAction func updateSwitch(sender : AnyObject) {switchChangedValue()}
+    
+    // Weight of Blender B
+    @IBOutlet var weightOfBLabel : UILabel
+    @IBOutlet var weightOfBSlider : UISlider
+    @IBOutlet var weightOfBResults : UILabel
+    @IBAction func updateWeightOfB(sender : AnyObject) {
+        sliderChangedValue(weightOfBSlider,label:weightOfBResults,step:250)
+    }
+    
+    // Weight of Blender A
+    @IBOutlet var weightOfALabel : UILabel
+    @IBOutlet var weightOfASlider : UISlider
+    @IBOutlet var weightOfAResults : UILabel
+    @IBAction func updateWeightOfA(sender : AnyObject) {
+        sliderChangedValue(weightOfASlider,label:weightOfAResults,step:250)
+    }
+    
+    // Weight of Boxes
+    @IBOutlet var weightOfBoxesLabel : UILabel
+    @IBOutlet var weightOfBoxesResults : UILabel
+    @IBOutlet var weightOfBoxesSlider : UISlider
+    @IBAction func updateWeightOfBoxes(sender : AnyObject) {
+        sliderChangedValue(weightOfBoxesSlider,label:weightOfBoxesResults,step:100)
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,23 +83,38 @@ class ViewController: UIViewController {
         currentPassSlider.value        = 1
         currentPassSlider.continuous   = true
         //rate
-        rateSlider.minimumValue = 0
-        rateSlider.maximumValue = 6000
-        rateSlider.value        = 1000
+        rateSlider.minimumValue = 1
+        rateSlider.maximumValue = 24
+        rateSlider.value        = 1
         rateSlider.continuous   = true
-        
+        // weight of B
+        weightOfBSlider.minimumValue = 1
+        weightOfBSlider.maximumValue = 120
+        weightOfBSlider.value        = 1
+        weightOfBSlider.continuous   = true
+        // weight of A
+        weightOfASlider.minimumValue = 1
+        weightOfASlider.maximumValue = 120
+        weightOfASlider.value        = 1
+        weightOfASlider.continuous   = true
+        //weight of Boxes
+        weightOfBoxesSlider.minimumValue = 1
+        weightOfBoxesSlider.maximumValue = 16
+        weightOfBoxesSlider.value        = 1
+        weightOfBoxesSlider.continuous   = true
     }
     //Actions
-    func sliderChangedValue(slider: UISlider) {
-        results.text = "\(Int(slider.value) * 5)"
+    func sliderChangedValue(slider: UISlider, label: UILabel, step: Int) {
+        results.text = "\(Int(slider.value) * step)"
+        label.text   = "\(Int(slider.value) * step)"
     }
     
     func switchChangedValue() {
         if (increasingSwitch.on){
-            increasingLabel.text = "Weight of Blender A is increasing"
+            increasingLabel.text = "Blender A is increasing"
         }
         else{
-           increasingLabel.text = "Weight of Blender B is increasing"
+           increasingLabel.text = "Blender B is increasing"
         }
     }
 

@@ -57,6 +57,9 @@
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="13" y="368" width="295" height="31"/>
                                 </variation>
+                                <connections>
+                                    <action selector="updateWeightOfB:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Bpn-cP-BJh"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight of Blender B" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="niN-xS-5Wr">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -72,6 +75,9 @@
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="13" y="444" width="295" height="31"/>
                                 </variation>
+                                <connections>
+                                    <action selector="updateWeightOfA:" destination="vXZ-lx-hvc" eventType="valueChanged" id="D0w-vx-PtY"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSs-Me-cY2">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -87,6 +93,9 @@
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="13" y="522" width="295" height="31"/>
                                 </variation>
+                                <connections>
+                                    <action selector="updateWeightOfBoxes:" destination="vXZ-lx-hvc" eventType="valueChanged" id="ECA-Ra-cp1"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight of Boxes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Htc-3F-9xe">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -100,7 +109,7 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CZU-Ba-qAJ">
                                 <rect key="frame" x="-25" y="-15" width="51" height="31"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="236" y="292" width="51.5" height="31"/>
+                                    <rect key="frame" x="236" y="292" width="51" height="31"/>
                                 </variation>
                                 <connections>
                                     <action selector="updateSwitch:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Dqo-cm-2ex"/>
@@ -124,10 +133,18 @@
                                     <action selector="updateNumPass:" destination="vXZ-lx-hvc" eventType="valueChanged" id="456-Fy-tWx"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0z-if-8d5">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0z-if-8d5">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Results">
+                                        <attributes>
+                                            <color key="NSColor" red="0.066700047734656737" green="0.36658463850716566" blue="0.94240404211956519" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="24" name="HelveticaNeue"/>
+                                            <font key="NSOriginalFont" size="24" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="15" y="20" width="291" height="44"/>
@@ -140,6 +157,108 @@
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="29" y="78" width="141.5" height="20.5"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0A-Tb-CDc">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="1">
+                                        <attributes>
+                                            <color key="NSColor" red="0.035333111454495032" green="0.49793004857858619" blue="0.99919327445652173" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="Helvetica"/>
+                                            <font key="NSOriginalFont" size="17" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="clipping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="183" y="75" width="21" height="27"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axk-2E-ypV">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="1">
+                                        <attributes>
+                                            <color key="NSColor" red="0.035333111454495032" green="0.49793004857858619" blue="0.99919327445652173" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="Helvetica"/>
+                                            <font key="NSOriginalFont" size="17" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="clipping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="136" y="148" width="21" height="27"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8I-c3-kPL">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="250">
+                                        <attributes>
+                                            <color key="NSColor" red="0.035333111454495032" green="0.49793004857858619" blue="0.99919327445652173" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="Helvetica"/>
+                                            <font key="NSOriginalFont" size="17" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="clipping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="74" y="210" width="102" height="27"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXr-JB-BEo">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="250">
+                                        <attributes>
+                                            <color key="NSColor" red="0.035333111454495032" green="0.49793004857858619" blue="0.99919327445652173" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="Helvetica"/>
+                                            <font key="NSOriginalFont" size="17" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="clipping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="190" y="341" width="104" height="27"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2H0-DS-8ji">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="250">
+                                        <attributes>
+                                            <color key="NSColor" red="0.035333111454495032" green="0.49793004857858619" blue="0.99919327445652173" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="Helvetica"/>
+                                            <font key="NSOriginalFont" size="17" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="clipping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="190" y="415" width="104" height="27"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBu-Ym-wK4">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="100">
+                                        <attributes>
+                                            <color key="NSColor" red="0.035333111454495032" green="0.49793004857858619" blue="0.99919327445652173" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="Helvetica"/>
+                                            <font key="NSOriginalFont" size="17" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="clipping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="160" y="491" width="115" height="27"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -162,6 +281,12 @@
                                 <exclude reference="sJS-St-EDc"/>
                                 <exclude reference="Y0z-if-8d5"/>
                                 <exclude reference="3bs-Kf-Glt"/>
+                                <exclude reference="q0A-Tb-CDc"/>
+                                <exclude reference="axk-2E-ypV"/>
+                                <exclude reference="z8I-c3-kPL"/>
+                                <exclude reference="CXr-JB-BEo"/>
+                                <exclude reference="2H0-DS-8ji"/>
+                                <exclude reference="DBu-Ym-wK4"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -181,24 +306,41 @@
                                 <include reference="sJS-St-EDc"/>
                                 <include reference="Y0z-if-8d5"/>
                                 <include reference="3bs-Kf-Glt"/>
+                                <include reference="q0A-Tb-CDc"/>
+                                <include reference="axk-2E-ypV"/>
+                                <include reference="z8I-c3-kPL"/>
+                                <include reference="CXr-JB-BEo"/>
+                                <include reference="2H0-DS-8ji"/>
+                                <include reference="DBu-Ym-wK4"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="currentPassLabel" destination="5j1-th-sqZ" id="V45-He-5qs"/>
+                        <outlet property="currentPassResults" destination="axk-2E-ypV" id="fDa-8i-QDM"/>
                         <outlet property="currentPassSlider" destination="JdV-AF-rDz" id="hNX-Ww-G8d"/>
                         <outlet property="increasingLabel" destination="SuH-x1-1a1" id="L3V-4y-VTQ"/>
                         <outlet property="increasingSwitch" destination="CZU-Ba-qAJ" id="w7d-jm-T8h"/>
                         <outlet property="numPassLabel" destination="3bs-Kf-Glt" id="hEd-Nv-1AO"/>
+                        <outlet property="numPassResults" destination="q0A-Tb-CDc" id="r5M-Fs-BZu"/>
                         <outlet property="numPassSlider" destination="sJS-St-EDc" id="aK7-KR-dH3"/>
                         <outlet property="rateLabel" destination="YSs-Me-cY2" id="SqJ-Mf-TyJ"/>
+                        <outlet property="rateResults" destination="z8I-c3-kPL" id="EuB-MU-Km5"/>
                         <outlet property="rateSlider" destination="fV0-hx-GqZ" id="zKd-rM-2Ic"/>
                         <outlet property="results" destination="Y0z-if-8d5" id="JRO-8g-j4p"/>
+                        <outlet property="weightOfAResults" destination="2H0-DS-8ji" id="MNs-bD-2V1"/>
+                        <outlet property="weightOfASlider" destination="Gg8-gM-MHw" id="nfe-Pf-amk"/>
+                        <outlet property="weightOfBLabel" destination="niN-xS-5Wr" id="LPt-lu-llq"/>
+                        <outlet property="weightOfBResults" destination="CXr-JB-BEo" id="JkQ-bx-HG3"/>
+                        <outlet property="weightOfBSlider" destination="qb5-iV-LIC" id="pu7-ta-w85"/>
+                        <outlet property="weightOfBoxesLabel" destination="Htc-3F-9xe" id="b5s-6d-uug"/>
+                        <outlet property="weightOfBoxesResults" destination="DBu-Ym-wK4" id="bbN-k9-vFO"/>
+                        <outlet property="weightOfBoxesSlider" destination="o9q-X6-AYS" id="IiZ-kj-88z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-24" y="57.75"/>
+            <point key="canvasLocation" x="-19" y="19.5"/>
         </scene>
     </scenes>
 </document>
