@@ -34,6 +34,7 @@
 		09D39486194619E600B22FDC /* beamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = beamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D3948B194619E600B22FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09D3948C194619E600B22FDC /* beamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beamTests.swift; sourceTree = "<group>"; };
+		09D53966194785980034D2C5 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 			children = (
 				09D39479194619E500B22FDC /* AppDelegate.swift */,
 				09D3947B194619E500B22FDC /* ViewController.swift */,
+				09D53966194785980034D2C5 /* MyPlayground.playground */,
 				09D3947D194619E500B22FDC /* Main.storyboard */,
 				09D39480194619E600B22FDC /* Images.xcassets */,
 				09D39477194619E500B22FDC /* Supporting Files */,
