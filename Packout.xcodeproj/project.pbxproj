@@ -25,13 +25,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		09D39474194619E500B22FDC /* beam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09D39474194619E500B22FDC /* Packout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Packout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D39478194619E500B22FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09D39479194619E500B22FDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09D3947B194619E500B22FDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		09D3947E194619E500B22FDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09D39480194619E600B22FDC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		09D39486194619E600B22FDC /* beamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = beamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09D39486194619E600B22FDC /* PackoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PackoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D3948B194619E600B22FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09D3948C194619E600B22FDC /* beamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beamTests.swift; sourceTree = "<group>"; };
 		09D53966194785980034D2C5 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
@@ -67,8 +67,8 @@
 		09D39475194619E500B22FDC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				09D39474194619E500B22FDC /* beam.app */,
-				09D39486194619E600B22FDC /* beamTests.xctest */,
+				09D39474194619E500B22FDC /* Packout.app */,
+				09D39486194619E600B22FDC /* PackoutTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,9 +114,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		09D39473194619E500B22FDC /* beam */ = {
+		09D39473194619E500B22FDC /* Packout */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 09D39490194619E600B22FDC /* Build configuration list for PBXNativeTarget "beam" */;
+			buildConfigurationList = 09D39490194619E600B22FDC /* Build configuration list for PBXNativeTarget "Packout" */;
 			buildPhases = (
 				09D39470194619E500B22FDC /* Sources */,
 				09D39471194619E500B22FDC /* Frameworks */,
@@ -126,14 +126,14 @@
 			);
 			dependencies = (
 			);
-			name = beam;
+			name = Packout;
 			productName = beam;
-			productReference = 09D39474194619E500B22FDC /* beam.app */;
+			productReference = 09D39474194619E500B22FDC /* Packout.app */;
 			productType = "com.apple.product-type.application";
 		};
-		09D39485194619E600B22FDC /* beamTests */ = {
+		09D39485194619E600B22FDC /* PackoutTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 09D39493194619E600B22FDC /* Build configuration list for PBXNativeTarget "beamTests" */;
+			buildConfigurationList = 09D39493194619E600B22FDC /* Build configuration list for PBXNativeTarget "PackoutTests" */;
 			buildPhases = (
 				09D39482194619E600B22FDC /* Sources */,
 				09D39483194619E600B22FDC /* Frameworks */,
@@ -144,9 +144,9 @@
 			dependencies = (
 				09D39488194619E600B22FDC /* PBXTargetDependency */,
 			);
-			name = beamTests;
+			name = PackoutTests;
 			productName = beamTests;
-			productReference = 09D39486194619E600B22FDC /* beamTests.xctest */;
+			productReference = 09D39486194619E600B22FDC /* PackoutTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -168,7 +168,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 09D3946F194619E500B22FDC /* Build configuration list for PBXProject "beam" */;
+			buildConfigurationList = 09D3946F194619E500B22FDC /* Build configuration list for PBXProject "Packout" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -181,8 +181,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				09D39473194619E500B22FDC /* beam */,
-				09D39485194619E600B22FDC /* beamTests */,
+				09D39473194619E500B22FDC /* Packout */,
+				09D39485194619E600B22FDC /* PackoutTests */,
 			);
 		};
 /* End PBXProject section */
@@ -229,7 +229,7 @@
 /* Begin PBXTargetDependency section */
 		09D39488194619E600B22FDC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 09D39473194619E500B22FDC /* beam */;
+			target = 09D39473194619E500B22FDC /* Packout */;
 			targetProxy = 09D39487194619E600B22FDC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -337,7 +337,7 @@
 				INFOPLIST_FILE = beam/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Packout;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -356,7 +356,7 @@
 				INFOPLIST_FILE = beam/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Packout;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -376,7 +376,7 @@
 				INFOPLIST_FILE = beamTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PackoutTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
@@ -392,7 +392,7 @@
 				INFOPLIST_FILE = beamTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PackoutTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;
@@ -400,7 +400,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		09D3946F194619E500B22FDC /* Build configuration list for PBXProject "beam" */ = {
+		09D3946F194619E500B22FDC /* Build configuration list for PBXProject "Packout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				09D3948E194619E600B22FDC /* Debug */,
@@ -409,7 +409,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		09D39490194619E600B22FDC /* Build configuration list for PBXNativeTarget "beam" */ = {
+		09D39490194619E600B22FDC /* Build configuration list for PBXNativeTarget "Packout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				09D39491194619E600B22FDC /* Debug */,
@@ -418,7 +418,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		09D39493194619E600B22FDC /* Build configuration list for PBXNativeTarget "beamTests" */ = {
+		09D39493194619E600B22FDC /* Build configuration list for PBXNativeTarget "PackoutTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				09D39494194619E600B22FDC /* Debug */,
