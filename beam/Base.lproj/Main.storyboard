@@ -14,21 +14,24 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="JdV-AF-rDz">
-                                <rect key="frame" x="13" y="180" width="295" height="31"/>
+                                <rect key="frame" x="13" y="183" width="295" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="0.39607846740000002" green="0.73725491759999995" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>
                                     <action selector="updateCurrentPass:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Nfz-QM-eLr"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Pass" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5j1-th-sqZ">
-                                <rect key="frame" x="29" y="157" width="99.5" height="20.5"/>
+                                <rect key="frame" x="29" y="160" width="99.5" height="20.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.30409307070000002" green="0.30409307070000002" blue="0.30409307070000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="fV0-hx-GqZ">
-                                <rect key="frame" x="13" y="238" width="295" height="31"/>
+                                <rect key="frame" x="13" y="241" width="295" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="0.39607846740000002" green="0.73725491759999995" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>
                                     <action selector="updateRate:" destination="vXZ-lx-hvc" eventType="valueChanged" id="8dO-9l-GZK"/>
                                 </connections>
@@ -36,12 +39,14 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight of Blender A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZxF-a9-MfD">
                                 <rect key="frame" x="29" y="418" width="152.5" height="20.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.30409307070000002" green="0.30409307070000002" blue="0.30409307070000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="qb5-iV-LIC">
                                 <rect key="frame" x="13" y="368" width="295" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="0.39607846740000002" green="0.73725491759999995" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>
                                     <action selector="updateWeightOfB:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Bpn-cP-BJh"/>
                                 </connections>
@@ -49,25 +54,29 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight of Blender B" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="niN-xS-5Wr">
                                 <rect key="frame" x="29" y="344" width="153.5" height="20.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.30409307070000002" green="0.30409307070000002" blue="0.30409307070000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="Gg8-gM-MHw">
                                 <rect key="frame" x="13" y="444" width="295" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="0.39607846740000002" green="0.73725491759999995" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>
                                     <action selector="updateWeightOfA:" destination="vXZ-lx-hvc" eventType="valueChanged" id="D0w-vx-PtY"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YSs-Me-cY2">
-                                <rect key="frame" x="29" y="219" width="99.5" height="20.5"/>
+                                <rect key="frame" x="29" y="222" width="99.5" height="20.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.30409307070000002" green="0.30409307070000002" blue="0.30409307070000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="o9q-X6-AYS">
                                 <rect key="frame" x="13" y="522" width="295" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="0.39607846740000002" green="0.73725491759999995" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>
                                     <action selector="updateWeightOfBoxes:" destination="vXZ-lx-hvc" eventType="valueChanged" id="ECA-Ra-cp1"/>
                                 </connections>
@@ -75,13 +84,15 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight of Boxes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Htc-3F-9xe">
                                 <rect key="frame" x="29" y="494" width="125.5" height="20.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.30409307070000002" green="0.30409307070000002" blue="0.30409307070000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="CZU-Ba-qAJ">
                                 <rect key="frame" x="239" y="289" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="onTintColor" red="0.31588176664966028" green="0.67535374955777105" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.39607846736907959" green="0.73725491762161255" blue="0.98823535442352295" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="onTintColor" red="0.45456893440000001" green="0.75737720559999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="updateSwitch:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Dqo-cm-2ex"/>
                                 </connections>
@@ -89,31 +100,34 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight of     is Increasing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SuH-x1-1a1">
                                 <rect key="frame" x="29" y="294" width="196.5" height="20.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.30409307070000002" green="0.30409307070000002" blue="0.30409307070000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="sJS-St-EDc">
-                                <rect key="frame" x="13" y="113" width="295" height="31"/>
+                                <rect key="frame" x="13" y="116" width="295" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="0.39607846740000002" green="0.73725491759999995" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>
                                     <action selector="updateNumPass:" destination="vXZ-lx-hvc" eventType="valueChanged" id="456-Fy-tWx"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Passes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3bs-Kf-Glt">
-                                <rect key="frame" x="29" y="84" width="141.5" height="20.5"/>
+                                <rect key="frame" x="29" y="87" width="141.5" height="20.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.30409307065217395" green="0.30409307065217395" blue="0.30409307065217395" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" id="q0A-Tb-CDc">
-                                <rect key="frame" x="183" y="81" width="21" height="27"/>
+                                <rect key="frame" x="183" y="84" width="21" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="6">
                                         <attributes>
-                                            <color key="NSColor" red="0.035333111454495032" green="0.49793004857858619" blue="0.99919327445652173" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="17" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="17" name="Helvetica"/>
+                                            <color key="NSColor" red="0.39607846740000002" green="0.73725491759999995" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="17" name="Helvetica-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="clipping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
@@ -121,14 +135,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" id="axk-2E-ypV">
-                                <rect key="frame" x="136" y="154" width="21" height="27"/>
+                                <rect key="frame" x="136" y="157" width="21" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="1">
                                         <attributes>
-                                            <color key="NSColor" red="0.035333111454495032" green="0.49793004857858619" blue="0.99919327445652173" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="17" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="17" name="Helvetica"/>
+                                            <color key="NSColor" red="0.39607846740000002" green="0.73725491759999995" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="17" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="17" name="Helvetica-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="clipping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
@@ -136,14 +150,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" id="z8I-c3-kPL">
-                                <rect key="frame" x="74" y="216" width="102" height="27"/>
+                                <rect key="frame" x="74" y="219" width="102" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="4500">
                                         <attributes>
-                                            <color key="NSColor" red="0.035333111454495032" green="0.49793004857858619" blue="0.99919327445652173" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="17" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="17" name="Helvetica"/>
+                                            <color key="NSColor" red="0.39607846740000002" green="0.73725491759999995" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="17" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="17" name="Helvetica-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="clipping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
@@ -156,9 +170,9 @@
                                 <attributedString key="attributedText">
                                     <fragment content="1">
                                         <attributes>
-                                            <color key="NSColor" red="0.035333111454495032" green="0.49793004857858619" blue="0.99919327445652173" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="17" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="17" name="Helvetica"/>
+                                            <color key="NSColor" red="0.39607846740000002" green="0.73725491759999995" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="17" name="Helvetica-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="clipping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
@@ -171,9 +185,9 @@
                                 <attributedString key="attributedText">
                                     <fragment content="1">
                                         <attributes>
-                                            <color key="NSColor" red="0.035333111454495032" green="0.49793004857858619" blue="0.99919327445652173" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="17" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="17" name="Helvetica"/>
+                                            <color key="NSColor" red="0.39607846740000002" green="0.73725491759999995" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="17" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="17" name="Helvetica-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="clipping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
@@ -186,46 +200,55 @@
                                 <attributedString key="attributedText">
                                     <fragment content="1300">
                                         <attributes>
-                                            <color key="NSColor" red="0.035333111454495032" green="0.49793004857858619" blue="0.99919327445652173" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="17" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="17" name="Helvetica"/>
+                                            <color key="NSColor" red="0.39607846740000002" green="0.73725491759999995" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="17" name="Helvetica-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="clipping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5WJ-uM-xtd">
-                                <rect key="frame" x="106" y="294" width="11.5" height="20.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.066700047730000003" green="0.3665846385" blue="0.94240404209999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9f3-AQ-s4x">
-                                <rect key="frame" x="38" y="51" width="216" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5WJ-uM-xtd">
+                                <rect key="frame" x="106" y="294" width="12" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Boxes Needed: ">
+                                    <fragment content="A">
                                         <attributes>
-                                            <color key="NSColor" red="0.57733950407608692" green="0.57733950407608692" blue="0.57733950407608692" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                            <color key="NSColor" red="0.39607846740000002" green="0.73725491759999995" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="18" name="Helvetica-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Y0z-if-8d5">
-                                <rect key="frame" x="10" y="16" width="291" height="44"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9f3-AQ-s4x">
+                                <rect key="frame" x="0.0" y="55" width="320" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.3158817666" green="0.67535374960000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Boxes Needed: ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.7019608021" green="0.76470595600000002" blue="0.78823536630000002" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Y0z-if-8d5">
+                                <rect key="frame" x="0.0" y="17" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.39607846740000002" green="0.73725491759999995" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Packout Time">
                                         <attributes>
-                                            <color key="NSColor" red="0.066700047734656737" green="0.36658463850716566" blue="0.94240404211956519" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="21" name="HelveticaNeue"/>
-                                            <font key="NSOriginalFont" size="24" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            <color key="NSColor" red="0.39607846740000002" green="0.73725491759999995" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="22" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="26" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -261,7 +284,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-24" y="53.25"/>
+            <point key="canvasLocation" x="-24" y="53"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
