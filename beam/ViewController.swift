@@ -115,24 +115,27 @@ class ViewController: UIViewController {
     func sliderChangedValue(slider: UISlider, label: UILabel, step: Int) {
         //results.text = "\(Int(slider.value) * step)"
         label.text   = "\(Int(slider.value) * step)"
-        results.text = "Packout: \(convert(calculatePackoutTime()).date) at \(convert(calculatePackoutTime()).time) "
+        results.text = convert(calculatePackoutTime())
     }
     
     func switchChangedValue() {
         if (increasingSwitch.on){
             increasingL.text = "A"
-            results.text = "Packout: \(convert(calculatePackoutTime()).date) at \(convert(calculatePackoutTime()).time) "
+            results.text = convert(calculatePackoutTime())
         }
         else{
             increasingL.text = "B"
-            results.text = "Packout: \(convert(calculatePackoutTime()).date) at \(convert(calculatePackoutTime()).time) "
+            results.text = convert(calculatePackoutTime())
         }
     }
          //test new date formatter
-    func convert(add:Double) -> (date: String, time: String) {
+    func convert(add:Double) -> String {
         
-        let date = NSDate(timeIntervalSinceNow: 3600 * add)
-        
+        var date = NSDate(timeIntervalSinceNow: 3600 * add)
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "'Packout: 'MMM dd, hh:MM a"
+        return formatter.stringFromDate(date)
+       /*
         //Formatter for time
         let formatterTime = NSDateFormatter()
         formatterTime.timeStyle = .ShortStyle //Set style of time
@@ -145,9 +148,10 @@ class ViewController: UIViewController {
         var dateString = formatterDate.stringFromDate(date) //Convert to String
         
         return (dateString, timeString) //Returns a Tuple type
+*/
+        
         
     }
-
     //Calculate Packout Time
     func calculatePackoutTime() -> Double{
         var passesAdjusted = numPassResults.text.toInt()! - 1
