@@ -128,9 +128,9 @@ class ViewController: UIViewController {
          // Test new date formatter
     func convert(add:Double) -> String {
         
-        var date = NSDate(timeIntervalSinceNow: 3600 * add)
+        var date = NSDate(timeIntervalSinceNow: 3600.00 * add)
         let formatter = NSDateFormatter()
-        formatter.dateFormat = "'Packout: 'MMM dd, hh:MM a"
+        formatter.dateFormat = "'Packout: 'MMM dd, hh:mm a"
         return formatter.stringFromDate(date)
     }
     
@@ -138,13 +138,14 @@ class ViewController: UIViewController {
     func calculatePackoutTime() -> Double{
         var passesAdjusted = numPassResults.text.toInt()! - 1
         var passesLeft = Int(numPassResults.text.toInt()!) - 1 - Int(currentPassResults.text.toInt()!)
-        var weightAdded = Int(weightOfAResults.text.toInt()!) + Int(weightOfBResults.text.toInt()!)
+        //var weightAdded = Int(weightOfAResults.text.toInt()!) + Int(weightOfBResults.text.toInt()!)
+        var weightAdded = (weightOfAResults.text.toInt()!) + Int(weightOfBResults.text.toInt()!)
         var weightLeftInCurrentPass = Int(weightOfAResults.text.toInt()!)
         if (increasingSwitch.on){
             weightLeftInCurrentPass = Int(weightOfBResults.text.toInt()!)
         }
-        var weightCalculated = (weightAdded * passesLeft) + weightLeftInCurrentPass
-        var hoursToPackout = weightCalculated / Int(rateResults.text.toInt()!)
+        var weightCalculated = Double((weightAdded * passesLeft) + weightLeftInCurrentPass)
+        var hoursToPackout = weightCalculated / Double(rateResults.text.toInt()!)
         
         return Double(hoursToPackout)
     }
