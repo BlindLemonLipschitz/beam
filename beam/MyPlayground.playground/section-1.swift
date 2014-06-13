@@ -15,4 +15,3 @@ class Jason {
 }
 var hi = Jason(test: "Thats Me")
 hi.test
-jj

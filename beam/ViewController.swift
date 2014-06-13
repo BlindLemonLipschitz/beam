@@ -9,12 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-    // results will include Packout Time 
-    // and Number of Boxes Needed
+    // Results will include Packout Time and Number of Boxes Needed
     @IBOutlet var results : UILabel
+    
     //Boxes Needed Label
     @IBOutlet var boxesNeeded : UILabel
-    
     
     // Number of Passes connections from Storyboard
     @IBOutlet var numPassLabel : UILabel
@@ -30,8 +29,7 @@ class ViewController: UIViewController {
     @IBAction func updateCurrentPass(sender : AnyObject) {sliderChangedValue(currentPassSlider,label: currentPassResults,step: 1)
     }
     
-    // rate connections from storyboard
-    
+    // Rate connections from storyboard
     @IBOutlet var rateLabel : UILabel
     @IBOutlet var rateSlider : UISlider
     @IBOutlet var rateResults : UILabel
@@ -85,35 +83,34 @@ class ViewController: UIViewController {
         numPassSlider.maximumValue = 30
         numPassSlider.value        = 6
         numPassSlider.continuous   = true
-        //Current Pass
+        // Current Pass
         currentPassSlider.minimumValue = 1
         currentPassSlider.maximumValue = 30
         currentPassSlider.value        = 1
         currentPassSlider.continuous   = true
-        //rate
+        // Rate
         rateSlider.minimumValue = 1
         rateSlider.maximumValue = 24
         rateSlider.value        = 18
         rateSlider.continuous   = true
-        // weight of B
+        // Weight of B
         weightOfBSlider.minimumValue = 1
         weightOfBSlider.maximumValue = 120
         weightOfBSlider.value        = 1
         weightOfBSlider.continuous   = true
-        // weight of A
+        // Weight of A
         weightOfASlider.minimumValue = 1
         weightOfASlider.maximumValue = 120
         weightOfASlider.value        = 1
         weightOfASlider.continuous   = true
-        //weight of Boxes
+        // Weight of Boxes
         weightOfBoxesSlider.minimumValue = 1
         weightOfBoxesSlider.maximumValue = 16
         weightOfBoxesSlider.value        = 13
         weightOfBoxesSlider.continuous   = true
     }
-    //Actions
+    // Actions
     func sliderChangedValue(slider: UISlider, label: UILabel, step: Int) {
-        //results.text = "\(Int(slider.value) * step)"
         label.text   = "\(Int(slider.value) * step)"
         results.text = convert(calculatePackoutTime())
     }
@@ -128,31 +125,16 @@ class ViewController: UIViewController {
             results.text = convert(calculatePackoutTime())
         }
     }
-         //test new date formatter
+         // Test new date formatter
     func convert(add:Double) -> String {
         
         var date = NSDate(timeIntervalSinceNow: 3600 * add)
         let formatter = NSDateFormatter()
         formatter.dateFormat = "'Packout: 'MMM dd, hh:MM a"
         return formatter.stringFromDate(date)
-       /*
-        //Formatter for time
-        let formatterTime = NSDateFormatter()
-        formatterTime.timeStyle = .ShortStyle //Set style of time
-        var timeString = formatterTime.stringFromDate(date) //Convert to String
-        
-        
-        //Formatter for date
-        let formatterDate = NSDateFormatter()
-        formatterDate.dateStyle = .ShortStyle //Set style of date
-        var dateString = formatterDate.stringFromDate(date) //Convert to String
-        
-        return (dateString, timeString) //Returns a Tuple type
-*/
-        
-        
     }
-    //Calculate Packout Time
+    
+    // Calculate Packout Time
     func calculatePackoutTime() -> Double{
         var passesAdjusted = numPassResults.text.toInt()! - 1
         var passesLeft = Int(numPassResults.text.toInt()!) - 1 - Int(currentPassResults.text.toInt()!)
