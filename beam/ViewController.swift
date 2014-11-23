@@ -9,62 +9,63 @@
 import UIKit
 
 class ViewController: UIViewController {
+
     // Results will include Packout Time and Number of Boxes Needed
-    @IBOutlet var results : UILabel
+    @IBOutlet var results : UILabel!
     
     //Boxes Needed Label
-    @IBOutlet var boxesNeeded : UILabel
+    @IBOutlet var boxesNeeded : UILabel!
     
     // Number of Passes connections from Storyboard
-    @IBOutlet var numPassLabel : UILabel
-    @IBOutlet var numPassSlider : UISlider
-    @IBOutlet var numPassResults : UILabel
+    @IBOutlet var numPassLabel : UILabel!
+    @IBOutlet var numPassSlider : UISlider!
+    @IBOutlet var numPassResults : UILabel!
     @IBAction func updateNumPass(sender : AnyObject) {sliderChangedValue(numPassSlider,label: numPassResults,step: 1)
     }
     
     // Current Pass connections from Storyboard
-    @IBOutlet var currentPassLabel : UILabel
-    @IBOutlet var currentPassSlider : UISlider
-    @IBOutlet var currentPassResults : UILabel
+    @IBOutlet var currentPassLabel : UILabel!
+    @IBOutlet var currentPassSlider : UISlider!
+    @IBOutlet var currentPassResults : UILabel!
     @IBAction func updateCurrentPass(sender : AnyObject) {sliderChangedValue(currentPassSlider,label: currentPassResults,step: 1)
     }
     
     // Rate connections from storyboard
-    @IBOutlet var rateLabel : UILabel
-    @IBOutlet var rateSlider : UISlider
-    @IBOutlet var rateResults : UILabel
+    @IBOutlet var rateLabel : UILabel!
+    @IBOutlet var rateSlider : UISlider!
+    @IBOutlet var rateResults : UILabel!
     @IBAction func updateRate(sender : AnyObject) {
         sliderChangedValue(rateSlider,label:rateResults,step:250)
     }
     
     // Weight of increasing
-    @IBOutlet var increasingL : UILabel
-    @IBOutlet var increasingLabel : UILabel
-    @IBOutlet var increasingSwitch : UISwitch
+    @IBOutlet var increasingL : UILabel!
+    @IBOutlet var increasingLabel : UILabel!
+    @IBOutlet var increasingSwitch : UISwitch!
     @IBAction func updateSwitch(sender : AnyObject) {switchChangedValue()}
     
     // Weight of Blender B
-    @IBOutlet var weightOfBLabel : UILabel
-    @IBOutlet var weightOfBSlider : UISlider
-    @IBOutlet var weightOfBResults : UILabel
+    @IBOutlet var weightOfBLabel : UILabel!
+    @IBOutlet var weightOfBSlider : UISlider!
+    @IBOutlet var weightOfBResults : UILabel!
     @IBAction func updateWeightOfB(sender : AnyObject) {
         sliderChangedValue(weightOfBSlider,label:weightOfBResults,step:250)
         boxesNeed()
     }
     
     // Weight of Blender A
-    @IBOutlet var weightOfALabel : UILabel
-    @IBOutlet var weightOfASlider : UISlider
-    @IBOutlet var weightOfAResults : UILabel
+    @IBOutlet var weightOfALabel : UILabel!
+    @IBOutlet var weightOfASlider : UISlider!
+    @IBOutlet var weightOfAResults : UILabel!
     @IBAction func updateWeightOfA(sender : AnyObject) {
         sliderChangedValue(weightOfASlider,label:weightOfAResults,step:250)
         boxesNeed()
     }
     
     // Weight of Boxes
-    @IBOutlet var weightOfBoxesLabel : UILabel
-    @IBOutlet var weightOfBoxesResults : UILabel
-    @IBOutlet var weightOfBoxesSlider : UISlider
+    @IBOutlet var weightOfBoxesLabel : UILabel!
+    @IBOutlet var weightOfBoxesResults : UILabel!
+    @IBOutlet var weightOfBoxesSlider : UISlider!
     @IBAction func updateWeightOfBoxes(sender : AnyObject) {
         sliderChangedValue(weightOfBoxesSlider,label:weightOfBoxesResults,step:100)
         boxesNeed()
@@ -136,21 +137,29 @@ class ViewController: UIViewController {
     
     // Calculate Packout Time
     func calculatePackoutTime() -> Double{
-        var passesAdjusted = numPassResults.text.toInt()! - 1
-        var passesLeft = Int(numPassResults.text.toInt()!) - 1 - Int(currentPassResults.text.toInt()!)
+        var weightLeftInCurrentPass = Double(0)
+        var passesAdjusted = Int(numPassSlider.value - 1)
+        var passesLeft = Int(passesAdjusted - Int(currentPassSlider.value))
         //var weightAdded = Int(weightOfAResults.text.toInt()!) + Int(weightOfBResults.text.toInt()!)
-        var weightAdded = (weightOfAResults.text.toInt()!) + Int(weightOfBResults.text.toInt()!)
-        var weightLeftInCurrentPass = Int(weightOfAResults.text.toInt()!)
+        var weightA = Int(weightOfASlider!.value)
+        var weightB = Int(weightOfBSlider!.value)
+        var weightAdded = Double(weightA + weightB)
         if (increasingSwitch.on){
-            weightLeftInCurrentPass = Int(weightOfBResults.text.toInt()!)
+            weightLeftInCurrentPass = Double(weightB)
         }
-        var weightCalculated = Double((weightAdded * passesLeft) + weightLeftInCurrentPass)
-        var hoursToPackout = weightCalculated / Double(rateResults.text.toInt()!)
+        else{
+            weightLeftInCurrentPass = Double(weightA)
+            
+        }
+        var weightCalculated = (weightAdded * Double(passesLeft)) + (weightLeftInCurrentPass)
+        var hoursToPackout = weightCalculated / Double(rateSlider.value)
         
         return Double(hoursToPackout)
     }
     func boxesNeed() {
-        var box = (weightOfAResults.text.toInt()! + weightOfBResults.text.toInt()!) / weightOfBoxesResults.text.toInt()!
-        boxesNeeded.text = "Boxes Needed: \(box)"
+        var weightA = Int(weightOfASlider!.value)
+        var weightB = Int(weightOfBSlider!.value)
+        var box = (Int(weightOfASlider!.value) + Int(weightOfBSlider!.value)) * 25 / (Int(weightOfBoxesSlider!.value) * 10)
+        boxesNeeded.text = "Boxes Needed: \(box + 1)"
     }
 }
