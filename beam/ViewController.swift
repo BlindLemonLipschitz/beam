@@ -151,8 +151,9 @@ class ViewController: UIViewController {
             weightLeftInCurrentPass = Double(weightA)
             
         }
-        var weightCalculated = (weightAdded * Double(passesLeft)) + (weightLeftInCurrentPass)
-        var hoursToPackout = weightCalculated / Double(rateSlider.value)
+        var weightCalculated = (Double(weightAdded) * Double(passesLeft)) + Double(weightLeftInCurrentPass)
+        var rate = Int(rateSlider.value)
+        var hoursToPackout = weightCalculated / Double(rate)
         
         return Double(hoursToPackout)
     }
@@ -160,6 +161,9 @@ class ViewController: UIViewController {
         var weightA = Int(weightOfASlider!.value)
         var weightB = Int(weightOfBSlider!.value)
         var box = (Int(weightOfASlider!.value) + Int(weightOfBSlider!.value)) * 25 / (Int(weightOfBoxesSlider!.value) * 10)
-        boxesNeeded.text = "Boxes Needed: \(box + 1)"
+        if ((Int(weightOfASlider!.value) + Int(weightOfBSlider!.value)) * 25 % (Int(weightOfBoxesSlider!.value) * 10)) != 0 {
+            box = (box + 1)
+        }
+        boxesNeeded.text = "Boxes Needed: \(box)"
     }
 }
